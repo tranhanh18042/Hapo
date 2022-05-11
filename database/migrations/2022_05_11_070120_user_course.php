@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class TeacherCourses extends Migration
+class UserCourses extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,10 @@ class TeacherCourses extends Migration
      */
     public function up()
     {
-        Schema::create('teacher_courses', function (Blueprint $table) {
+        Schema::create('user_course', function (Blueprint $table) {
             $table->id();
             $table->bigInteger('id_user')->nullable();
-            $table->bigInteger('id_courses')->nullable();
+            $table->bigInteger('id_course')->nullable();
             $table->timestamps();
             $table->softDeletes()->nullable();
         });
@@ -29,6 +29,6 @@ class TeacherCourses extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('teacher_courses');
+        Schema::dropIfExists('user_course');
     }
 }

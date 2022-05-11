@@ -14,7 +14,7 @@ class Document extends Migration
      */
     public function up()
     {
-        Schema::create('document',function(Blueprint $table){
+        Schema::create('document', function (Blueprint $table) {
             $table->id();
             $table->string('video')->nullable();
             $table->string('file')->nullable();

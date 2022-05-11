@@ -13,7 +13,7 @@ class UserCourses extends Migration
      */
     public function up()
     {
-        Schema::create('user_courses',function(Blueprint $table){
+        Schema::create('user_courses', function (Blueprint $table) {
             $table->id();
             $table->bigInteger('id_user')->nullable();
             $table->bigInteger('in_courses')->nullable();

@@ -13,7 +13,7 @@ class UserLesson extends Migration
      */
     public function up()
     {
-        Schema::create('user_lessons',function(Blueprint $table){
+        Schema::create('user_lessons', function (Blueprint $table) {
             $table->id();
             $table->bigInteger('id_user')->nullable();
             $table->bigInteger('id_lesson')->nullable();

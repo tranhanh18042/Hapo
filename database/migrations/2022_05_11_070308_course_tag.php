@@ -13,7 +13,7 @@ class CourseTag extends Migration
      */
     public function up()
     {
-        Schema::create('course_tag',function(Blueprint $table){
+        Schema::create('course_tag', function (Blueprint $table) {
             $table->id();
             $table->bigInteger('id_tag')->nullable();
             $table->timestamps();

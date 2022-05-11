@@ -13,7 +13,7 @@ class Lesson extends Migration
      */
     public function up()
     {
-        Schema::create('lesson', function(Blueprint $table){
+        Schema::create('lesson', function (Blueprint $table) {
             $table->id();
             $table->string('lesson')->nullable();
             $table->integer('time')->nullable();

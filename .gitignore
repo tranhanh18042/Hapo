@@ -16,3 +16,4 @@ yarn-error.log
 /public/app/public
 .env
 /public
+/dist

@@ -3,9 +3,8 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
-use Nette\Schema\Schema as SchemaSchema;
 
-class Document extends Migration
+class Lesson extends Migration
 {
     /**
      * Run the migrations.
@@ -14,11 +13,14 @@ class Document extends Migration
      */
     public function up()
     {
-        Schema::create('document', function (Blueprint $table) {
+        Schema::create('lessons',function(Blueprint $table){
             $table->id();
-            $table->string('video')->nullable();
-            $table->string('file')->nullable();
-            $table->string('document')->nullable();
+            $table->bigInteger('id_document')->nullable();
+            $table->string('lesson','255')->nullable();
+            $table->text('description')->nullable();
+            $table->text('requiment')->nullable();
+            $table->string('avatar','255')->nullable();
+            $table->integer("time")->nullable();
             $table->timestamps();
             $table->softDeletes()->nullable();
         });
@@ -31,6 +33,6 @@ class Document extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('document');
+        Schema::dropIfExists('lessons');
     }
 }

@@ -6,13 +6,17 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Tag extends Model
+class Tags extends Model
 {
     use HasFactory;
     use SoftDeletes;
+    protected $fillable = [
+        'name',
+        'link'
+    ];
 
-    public function course()
+    public function courses()
     {
-        return $this->belongsTo(Course::class, 'course_tag', 'id_tag', 'id_course');
+        return $this->belongsToMany(Courses::class, 'courses_tags','id_tags','id_courses');
     }
 }

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class Course extends Migration
+class UserLesson extends Migration
 {
     /**
      * Run the migrations.
@@ -13,16 +13,11 @@ class Course extends Migration
      */
     public function up()
     {
-        Schema::create('course', function (Blueprint $table) {
+        Schema::create('user_lessons',function(Blueprint $table){
             $table->id();
-            $table->string('course')->nullable();
-            $table->string('avatar')->nullable();
-            $table->longText('description')->nullable();
-            $table->bigInteger('price')->nullable();
-            $table->timestamps();
-            $table->bigInteger('id_course_tag')->nullable();
-            $table->bigInteger('id_review')->nullable();
+            $table->bigInteger('id_user')->nullable();
             $table->bigInteger('id_lesson')->nullable();
+            $table->timestamps();
             $table->softDeletes()->nullable();
         });
     }
@@ -34,6 +29,6 @@ class Course extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('course');
+        Schema::dropIfExists('user_lessons');
     }
 }

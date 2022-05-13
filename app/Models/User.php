@@ -2,17 +2,20 @@
 
 namespace App\Models;
 
-use Lesson;
-use Course;
+use Courses;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Lesson;
 use Review;
 
-class User extends Authenticatable
+class User extends Model
 {
     use HasFactory, Notifiable;
+    use SoftDeletes;
 
     /**
      * The attributes that are mass assignable.
@@ -23,11 +26,36 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'username',
+        'phone_number',
+        'address',
+        'birthday',
+        'about',
+        'status'
     ];
 
-    public function course()
+    /**
+     * The attributes that should be hidden for arrays.
+     *
+     * @var array
+     */
+    protected $hidden = [
+        'password',
+        'remember_token',
+    ];
+
+    /**
+     * The attributes that should be cast to native types.
+     *
+     * @var array
+     */
+    protected $casts = [
+        'email_verified_at' => 'datetime',
+    ];
+
+    public function courses()
     {
-        return $this->belongsToMany(Course::class, 'user_courses', 'id_user', 'id_courses');
+        return $this->belongsToMany(Courses::class, 'user_courses', 'id_user', 'id_courses');
     }
     public function lesson()
     {
@@ -35,10 +63,10 @@ class User extends Authenticatable
     }
     public function review()
     {
-        return $this->hasMany(Review::class);
+        return $this->hasMany(Review::class, 'id_user');
     }
-    public function teacher()
+    public function teachers()
     {
-        return $this->belongsToMany(Course::class, 'teacher_courses', 'id_user', 'id_courses');
+        return $this->belongsToMany(Courses::class, 'teacher_courses', 'id_user', 'id_courses');
     }
 }

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class EditUsers extends Migration
+class AddColoumPhone extends Migration
 {
     /**
      * Run the migrations.
@@ -14,12 +14,7 @@ class EditUsers extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->string('address')->nullable();
-            $table->dateTime('birthday')->nullable();
-            $table->text('about')->nullable();
-            $table->string('avatar')->nullable();
-            $table->boolean('status')->nullable();
-            $table->softDeletes()->nullable();
+            $table->string('phone_number')->nullable();
         });
     }
 
@@ -30,6 +25,8 @@ class EditUsers extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('users');
+        Schema::table('users', function (Blueprint $table) {
+            $table->dropColumn('phone_number')->nullable();
+        });
     }
 }

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class Review extends Migration
+class UsersCourses extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,10 @@ class Review extends Migration
      */
     public function up()
     {
-        Schema::create('reviews', function (Blueprint $table) {
+        Schema::create('user_courses',function(Blueprint $table){
             $table->id();
             $table->bigInteger('id_user')->nullable();
-            $table->string('comment', '1000')->nullable();
-            $table->integer('vote')->nullable();
+            $table->bigInteger('in_courses')->nullable();
             $table->timestamps();
             $table->softDeletes()->nullable();
         });
@@ -30,6 +29,6 @@ class Review extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('reviews');
+        Schema::dropIfExists('user_courses');
     }
 }

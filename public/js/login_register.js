@@ -1,8 +1,8 @@
 /******/ (() => { // webpackBootstrap
 var __webpack_exports__ = {};
-/*!*********************************************!*\
-  !*** ./resources/sass/js/login_register.js ***!
-  \*********************************************/
+/*!****************************************!*\
+  !*** ./resources/js/login_register.js ***!
+  \****************************************/
 $(document).ready(function () {
   $(".btn-register").click(function () {
     $(".content-login").css('display', 'none');

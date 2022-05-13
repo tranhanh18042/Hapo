@@ -1366,7 +1366,7 @@ html {
 
 .content-login {
   height: 671px;
-  top: 125px;
+  top: 20px;
 }
 .content-login .header-login {
   display: flex;
@@ -1496,7 +1496,7 @@ html {
 .content-register {
   height: 671px;
   display: none;
-  top: 125px;
+  top: 20px;
 }
 .content-register .header-register {
   display: flex;

@@ -18,4 +18,5 @@ yarn-error.log
 /public
 /dist
 /resources/asset
+/resources/asset/img
 /resources/sass/slick-1.8.1

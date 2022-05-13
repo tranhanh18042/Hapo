@@ -2,7 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Courses;
 use Illuminate\Http\Request;
+use App\Models\Review;
+use App\Models\UserLesson;
+use App\Models\Lesson;
+use Illuminate\Support\Facades\DB;
 
 class HomeController extends Controller
 {
@@ -11,10 +16,6 @@ class HomeController extends Controller
      *
      * @return void
      */
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
 
     /**
      * Show the application dashboard.
@@ -23,6 +24,11 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $courses = Courses::all()->random(3);
+        $reviews = Review::all()->random(4);
+        $courseCount = Courses::count();
+        $lessonCount = Lesson::count();
+        $userLessonCount = UserLesson::count();
+        return view('index', compact('courses', 'reviews', 'courseCount', 'lessonCount', 'userLessonCount'));
     }
 }

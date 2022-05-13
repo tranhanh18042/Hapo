@@ -1,5 +1,6 @@
-const mix = require('laravel-mix');
+"use strict";
 
+var mix = require('laravel-mix');
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
@@ -11,9 +12,5 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/sass/js/feed_back.js', 'public/js')
-    .js('resources/sass/js/login_register.js', 'public/js')
-    .vue()
-    .sass('resources/sass/HomePage/app.scss', 'public/css')
-    .copy('resources/asset/img', 'public/img')
-    .version();
+
+mix.js('resources/sass/js/feed_back.js', 'public/js').js('resources/sass/js/login_register.js', 'public/js').vue().sass('resources/sass/HomePage/app.scss', 'public/css').copy('resources/asset/img', 'public/img').version();

@@ -1,0 +1,98 @@
+.container-search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.container-search .form-search {
+  display: flex;
+  flex-direction: row;
+  margin-left: 21rem;
+  padding: 4rem 0rem 2rem 0rem;
+}
+.container-search .form-search .btn-filter {
+  width: 10rem;
+  height: 4rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  border: 1px solid #c4c4c4;
+}
+.container-search .form-search .input-search {
+  height: 4rem;
+  width: 35.5rem;
+  border-radius: 0.5rem;
+  margin-left: 0.5rem;
+}
+.container-search .form-search .btn-search {
+  color: white;
+  background-color: #b2d235;
+  margin-left: 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  width: 10rem;
+  height: 4rem;
+}
+
+.form-filter {
+  display: flex;
+  flex-direction: row;
+  width: 110rem;
+  height: 10.9rem;
+  border-radius: 0.5rem;
+  border: 1px solid #c4c4c4;
+  margin-left: 21rem;
+}
+.form-filter .title-search {
+  padding-right: 0.5rem;
+  width: 10rem;
+}
+.form-filter .title-search p {
+  padding: 1rem 0 0 1rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.form-option {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.form-option .btn-group-option {
+  display: flex;
+  flex-direction: row;
+}
+.form-option .btn-group-option .btn-new {
+  width: 10.1rem;
+  height: 3.4rem;
+  font-size: 1.4rem;
+  color: black;
+  border: 0;
+  margin-right: 1rem;
+  margin-top: 1rem;
+}
+.form-option .btn-group-option .btn-old {
+  width: 10.1rem;
+  height: 3.4rem;
+  color: black;
+  font-size: 1.4rem;
+  border: 0;
+  margin: 1rem 1rem 0rem 0rem;
+}
+.form-option .option-search {
+  width: 18rem;
+  height: 3.4rem;
+  margin: 1rem 1rem 0rem 0rem;
+  font-size: 1.4rem;
+  border-radius: 0.2rem;
+}
+
+.btn-new:hover {
+  background-color: #b2d235;
+  color: white;
+}
+
+.btn-old:hover {
+  background-color: #b2d235;
+  color: white;
+}

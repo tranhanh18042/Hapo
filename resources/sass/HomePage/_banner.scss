@@ -1,0 +1,125 @@
+@import 'variable';
+.banner {
+  width: 100%;
+  height: 650px;
+  display: flex !important;
+  align-items: center;
+  background-image: url('https://s3-alpha-sig.figma.com/img/866b/63ac/1e9eca12ac0612fb7b885045132e08f8?Expires=1652659200&Signature=fMiRO90lvj1jV6gepJIepc~dNllcnGnPZ49LoDA0AG4L4rRIEPXYzlmmNr3MnlcYrwZeD9HnShTgEl2TwSqyroXHVzVkHrHMOQqI6Oc0iIRr6QwAAhTDbETGzwczSU7yzxQnQkFS8LUU1iby-tdE4pQHzhguOb6p00oEY~6imKsF4bPwO7BifJvbRLajFhe95BJgc1D9dl-oqnQzReE9YdlHnokcKenblOesFb5d2VYzoDbpdv8LxQSgB5JqKUN7xya4fQNWlDFeLV-sB9NolHnCepnlzWm0HgU337FLLboDs5a6mQ1yCp6qHyAYp1nmszd7mYlL9IkFg6PbHcvHwA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.banner-content {
+  margin-left: 5%;
+
+  .content-title {
+    font-size: 48px;
+  }
+
+  .content-where {
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 40px;
+  }
+
+  .content-text {
+    font-size: 15px;
+  }
+
+  .btn-link-start {
+    background-color: $color-buton;
+    width: 377px;
+    height: 70px;
+    border-radius: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+    .link-start {
+      color: $color-letter-white;
+      font-size: 30px;
+      text-decoration: none;
+      font-family: cursive;
+    }
+    
+    .link-start:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+@media only screen and (min-width:768px) and (max-width: 1025px) {
+  .banner {
+    height: 350px;
+    background-image: url('http://127.0.0.1:5501/scaford-with-frontend/public/app/scss/img/banner_tablet.png');
+  }
+
+  .banner-content {
+    .content-title {
+      font-size: 30px;
+    }
+    
+    .content-where {
+      font-size: 30px;
+    }
+    
+    .content-text {
+      font-size: 16px;
+    }
+    
+    .btn-link-start {
+      width: 200px;
+      height: 30px;
+      
+      .link-start {
+        font-size: 16px;
+      }
+      
+      .link-start:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width:200px) and (max-width: 767px) {
+  .banner {
+    justify-content: center;
+    height: 200px;
+    background-image: url('http://127.0.0.1:5501/scaford-with-frontend/public/app/scss/img/banner_tablet.png');
+  }
+      
+  .banner-content {
+    position: relative;
+    top: 23rem;
+    margin-left: 0;
+    
+    .content-title {
+      font-size: 25px;
+    }
+    
+    .content-where {
+      font-size: 25px;
+    }
+    
+    .content-text {
+      font-size: 16px;
+    }
+    
+    .btn-link-start {
+      margin-left: 4rem;
+      width: 200px;
+      height: 30px;
+      box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+      
+      .link-start {
+        font-size: 16px;
+      }
+      
+      .link-start:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

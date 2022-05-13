@@ -1,0 +1,59 @@
+.content-register {
+  height: 671px;
+  display: none;
+  top: 125px;
+}
+.content-register .header-register {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+}
+.content-register .header-register .btn-login-header {
+  width: 50%;
+  height: 70px;
+  font-size: 25px;
+  border: 1px solid #B2D235;
+  font-weight: bold;
+  color: #B2D235;
+  background-color: white;
+}
+.content-register .header-register .btn-register {
+  width: 50%;
+  height: 70px;
+  font-size: 25px;
+  border: 1px solid #B2D235;
+  font-weight: bold;
+  color: white;
+  background-color: #B2D235;
+}
+
+.body-register {
+  margin: 30px 30px 0 30px;
+}
+.body-register .username {
+  margin: 0 auto;
+}
+.body-register .username .title-username {
+  font-size: 20px;
+}
+.body-register .username .text-username {
+  height: 60px;
+}
+.body-register .email .title-email {
+  font-size: 20px;
+}
+.body-register .email .text-email {
+  height: 60px;
+}
+.body-register .password .title-password {
+  font-size: 20px;
+}
+.body-register .password .text-password {
+  height: 60px;
+}
+.body-register .repeat-password .title-repeat-password {
+  font-size: 20px;
+}
+.body-register .repeat-password .text-repeat-password {
+  height: 60px;
+}

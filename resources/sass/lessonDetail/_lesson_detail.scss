@@ -1,0 +1,52 @@
+.img-courses-and-menu-courses{
+    height: 120rem;
+}
+.description-lesson-detail {
+  margin: 2rem 2rem 0rem 2rem;
+
+  .description-lesson {
+    margin-bottom: 2rem;
+
+    h2 {
+      font-weight: bold;
+      font-family: cursive;
+      margin-bottom: 2rem;
+    }
+    p {
+      font-size: 1.8rem;
+      text-align: justify;
+      margin: 0 auto;
+    }
+  }
+  .requirements {
+    margin-bottom: 2rem;
+
+    h2 {
+      font-weight: bold;
+      font-family: cursive;
+      margin-bottom: 2rem;
+    }
+    p {
+      font-size: 1.8rem;
+      text-align: justify;
+      margin: 0 auto;
+    }
+  }
+  .tags {
+      display: flex;
+
+    h2 {
+      font-family: cursive;
+      font-weight: bold;
+    }
+    a{
+        background-color: #F2F2F2;
+        height: 3rem;
+        width: 5rem;
+        text-align: center;
+        color: #949292;
+        font-size: 1.4rem;
+        margin: 0 1rem;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.img-courses-and-menu-courses {
+  height: 120rem;
+}
+
+.description-lesson-detail {
+  margin: 2rem 2rem 0rem 2rem;
+}
+.description-lesson-detail .description-lesson {
+  margin-bottom: 2rem;
+}
+.description-lesson-detail .description-lesson h2 {
+  font-weight: bold;
+  font-family: cursive;
+  margin-bottom: 2rem;
+}
+.description-lesson-detail .description-lesson p {
+  font-size: 1.8rem;
+  text-align: justify;
+  margin: 0 auto;
+}
+.description-lesson-detail .requirements {
+  margin-bottom: 2rem;
+}
+.description-lesson-detail .requirements h2 {
+  font-weight: bold;
+  font-family: cursive;
+  margin-bottom: 2rem;
+}
+.description-lesson-detail .requirements p {
+  font-size: 1.8rem;
+  text-align: justify;
+  margin: 0 auto;
+}
+.description-lesson-detail .tags {
+  display: flex;
+}
+.description-lesson-detail .tags h2 {
+  font-family: cursive;
+  font-weight: bold;
+}
+.description-lesson-detail .tags a {
+  background-color: #F2F2F2;
+  height: 3rem;
+  width: 5rem;
+  text-align: center;
+  color: #949292;
+  font-size: 1.4rem;
+  margin: 0 1rem;
+}

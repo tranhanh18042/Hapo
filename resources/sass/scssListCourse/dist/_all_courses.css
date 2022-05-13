@@ -1,0 +1,679 @@
+.container-footer {
+  background-color: #505353;
+  width: 100%;
+  height: 308px;
+  margin-top: 90px;
+  padding: 0 20px 0 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo-and-text {
+  height: 308px;
+  padding-top: 2%;
+}
+.logo-and-text img {
+  width: 219px;
+  height: 60px;
+}
+.logo-and-text p {
+  width: 279px;
+  height: 50px;
+  color: white;
+  font-size: 20px;
+  margin-left: 15%;
+}
+
+.group-option {
+  display: flex;
+  flex-direction: row;
+  padding-top: 2%;
+}
+.group-option .icon {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px 0 10px;
+}
+.group-option .icon a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+.group-icon {
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.group-icon a {
+  width: 50px;
+  height: 50px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1025px) {
+  .container-footer {
+    height: 218px;
+    padding: 0;
+  }
+
+  .logo-and-text {
+    height: 308px;
+    padding-top: 2%;
+  }
+  .logo-and-text img {
+    width: 170px;
+    height: 35px;
+  }
+  .logo-and-text p {
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+    margin-left: 0;
+  }
+
+  .group-option {
+    display: flex;
+    flex-direction: row;
+    padding-top: 2%;
+  }
+  .group-option .icon {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px 0 10px;
+  }
+  .group-option .icon a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding-top: 20px;
+  }
+
+  .group-icon {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .group-icon a {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+  }
+}
+@media only screen and (min-width: 200px) and (max-width: 767px) {
+  .container-footer {
+    width: 100%;
+    height: 391px;
+    margin-top: 50px;
+    display: block;
+  }
+
+  .logo-and-text {
+    position: relative;
+    top: 234px;
+    height: auto;
+    padding-top: 2%;
+  }
+  .logo-and-text img {
+    width: 150px;
+    height: 30px;
+  }
+  .logo-and-text p {
+    color: white;
+    font-size: 12px;
+    width: 175px;
+    margin: 0;
+  }
+
+  .group-option {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: -20% 20px 0 20px;
+  }
+  .group-option .icon {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px 0 10px;
+  }
+  .group-option .icon a {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    padding-top: 15px;
+  }
+
+  .group-icon {
+    position: relative;
+    left: 70%;
+    top: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .group-icon a {
+    padding: 10px;
+  }
+  .group-icon a img {
+    width: 30px;
+    height: 30px;
+  }
+}
+html {
+  font-size: 62.5%;
+}
+
+.nav-main {
+  width: 100%;
+  flex-direction: column;
+}
+
+.navbar-menu {
+  z-index: 10;
+  justify-content: flex-end;
+  margin-right: 5%;
+}
+
+.container-navbar .logo {
+  margin-left: 5%;
+}
+
+.list-item {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.list-menu .list-item:hover {
+  background-color: #B2D235;
+  border-radius: 17rem;
+}
+.list-menu .list-item:hover .item:hover {
+  color: white;
+}
+
+.item {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.nav-main {
+  width: 100%;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1025px) {
+  .container-navbar {
+    flex-direction: column;
+  }
+  .container-navbar .navbar-menu {
+    display: flex;
+  }
+
+  .btn-menu {
+    display: none;
+  }
+
+  .logo {
+    margin-left: 0;
+  }
+
+  .navbar-menu {
+    margin-right: 0;
+  }
+
+  .list-menu {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media only screen and (min-width: 200px) and (max-width: 767px) {
+  .container-navbar {
+    flex-direction: row;
+  }
+  .container-navbar .navbar-menu {
+    padding-left: 30%;
+    padding-right: 30%;
+  }
+  .container-navbar .navbar-menu .list-menu {
+    z-index: 10;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .item {
+    font-size: 16px;
+    padding-top: 50px;
+  }
+
+  .list-menu .list-item:hover {
+    background-color: transparent;
+    border-radius: 17rem;
+  }
+  .list-menu .list-item:hover .item:hover {
+    color: #B2D235;
+  }
+
+  .logo {
+    width: 50px;
+    height: 26px;
+    margin-left: 0;
+    margin-right: 55%;
+  }
+  .logo .img-logo {
+    width: 150px;
+    height: 26px;
+  }
+
+  .navbar-menu {
+    margin-right: 0;
+  }
+}
+.content-login {
+  height: 671px;
+  top: 125px;
+}
+.content-login .header-login {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+}
+.content-login .header-login .btn-login-header {
+  width: 50%;
+  height: 70px;
+  font-size: 25px;
+  border: 1px solid #B2D235;
+  font-weight: bold;
+  color: white;
+  background-color: #B2D235;
+}
+.content-login .header-login .btn-register {
+  width: 50%;
+  height: 70px;
+  font-size: 25px;
+  border: 1px solid #B2D235;
+  font-weight: bold;
+  color: #B2D235;
+  background-color: white;
+}
+
+.body-login {
+  margin: 30px 30px 0 30px;
+}
+.body-login .username {
+  margin: 0 auto;
+}
+.body-login .username .title-username {
+  font-size: 20px;
+}
+.body-login .username .text-username {
+  height: 60px;
+}
+.body-login .password .title-password {
+  font-size: 20px;
+}
+.body-login .password .text-password {
+  height: 60px;
+}
+.body-login .form-check {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.body-login .form-check a {
+  font-size: 18px;
+  color: #B2D235;
+  text-decoration: underline;
+}
+
+.remember-me input {
+  width: 18px;
+  height: 18px;
+}
+.remember-me label {
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+.btn-login {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+.btn-login button {
+  width: 200px;
+  height: 42px;
+  border-radius: 22px;
+  border: 0;
+  background-color: #B2D235;
+  font-size: 18px;
+  font-style: bold;
+  color: white;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.login-with {
+  margin: 15px 0 5px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.login-with .line-left {
+  width: 195px;
+  height: 1px;
+  background-color: black;
+}
+.login-with p {
+  font-size: 20px;
+}
+.login-with .line-right {
+  width: 195px;
+  height: 1px;
+  background-color: black;
+}
+
+.footer-login {
+  display: flex;
+  flex-direction: column;
+  margin: 0 30px 30px 30px;
+  border: 0;
+}
+.footer-login .btn-google {
+  margin-top: 15px;
+  width: 100%;
+  height: 55px;
+  border: 0;
+  background-color: #DC4E41;
+  font-size: 20px;
+  color: white;
+}
+.footer-login .btn-facebook {
+  margin-top: 15px;
+  width: 100%;
+  height: 55px;
+  border: 0;
+  background-color: #3B5999;
+  font-size: 20px;
+  color: white;
+}
+
+.content-register {
+  height: 671px;
+  display: none;
+  top: 125px;
+}
+.content-register .header-register {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+}
+.content-register .header-register .btn-login-header {
+  width: 50%;
+  height: 70px;
+  font-size: 25px;
+  border: 1px solid #B2D235;
+  font-weight: bold;
+  color: #B2D235;
+  background-color: white;
+}
+.content-register .header-register .btn-register {
+  width: 50%;
+  height: 70px;
+  font-size: 25px;
+  border: 1px solid #B2D235;
+  font-weight: bold;
+  color: white;
+  background-color: #B2D235;
+}
+
+.body-register {
+  margin: 30px 30px 0 30px;
+}
+.body-register .username {
+  margin: 0 auto;
+}
+.body-register .username .title-username {
+  font-size: 20px;
+}
+.body-register .username .text-username {
+  height: 60px;
+}
+.body-register .email .title-email {
+  font-size: 20px;
+}
+.body-register .email .text-email {
+  height: 60px;
+}
+.body-register .password .title-password {
+  font-size: 20px;
+}
+.body-register .password .text-password {
+  height: 60px;
+}
+.body-register .repeat-password .title-repeat-password {
+  font-size: 20px;
+}
+.body-register .repeat-password .text-repeat-password {
+  height: 60px;
+}
+
+.container-courses-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.container-courses-group .card {
+  width: 54rem;
+  height: 34rem;
+  margin: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 0.8rem;
+}
+
+.header-card {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #f1f1f1;
+}
+.header-card .img-courses {
+  margin-left: 2rem;
+  width: 8.9rem;
+  height: 8.9rem;
+}
+.header-card .img-courses img {
+  margin-top: 2rem;
+  width: 8.9rem;
+  height: 8.9rem;
+}
+.header-card .card-body {
+  padding: 0rem 0rem 0rem 2rem;
+}
+.header-card .card-body .card-title {
+  padding: 1rem;
+  margin: 0px;
+  font-size: 2.5rem;
+  font-family: cursive;
+  font-weight: bold;
+  color: #505353;
+}
+.header-card .card-body .card-text {
+  font-size: 1.5rem;
+  padding: 0rem 2rem 1rem 2rem;
+  margin: 0px;
+}
+.header-card .card-body .btn-courses {
+  background-color: #b2d235;
+  border: 0px;
+  width: 10.6rem;
+  height: 4.2rem;
+  border-radius: 2.2rem;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 1.8rem;
+  font-family: cursive;
+}
+
+.btn-more {
+  display: flex;
+  flex-direction: flex;
+  justify-content: flex-end;
+  padding: 2rem 2rem 2rem 2rem;
+}
+
+.imformation-courses {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0rem 2rem;
+  border-top: 2px;
+  width: 54rem;
+}
+.imformation-courses .learners-courses .learners {
+  margin: 0;
+  font-size: 2.5rem;
+  font-family: cursive;
+  font-style: bold;
+  color: #505353;
+}
+.imformation-courses .learners-courses .quantity-learners {
+  margin: 0;
+  font-size: 3rem;
+  font-family: cursive;
+  font-style: bold;
+  color: #b2d235;
+}
+.imformation-courses .lessons-courses .lessons {
+  margin: 0;
+  font-size: 2.5rem;
+  font-family: cursive;
+  font-style: bold;
+  color: #505353;
+}
+.imformation-courses .lessons-courses .quantity-lessons {
+  margin: 0;
+  font-size: 3rem;
+  font-family: cursive;
+  font-style: bold;
+  color: #b2d235;
+}
+.imformation-courses .times-courses .times {
+  margin: 0;
+  font-size: 2.5rem;
+  font-family: cursive;
+  font-style: bold;
+  color: #505353;
+}
+.imformation-courses .times-courses .quantity-times {
+  margin: 0;
+  font-size: 3rem;
+  font-family: cursive;
+  font-style: bold;
+  color: #b2d235;
+}
+
+.container-search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.container-search .form-search {
+  display: flex;
+  flex-direction: row;
+  margin-left: 21rem;
+  padding: 4rem 0rem 2rem 0rem;
+}
+.container-search .form-search .btn-filter {
+  width: 10rem;
+  height: 4rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+  border: 1px solid #c4c4c4;
+}
+.container-search .form-search .input-search {
+  height: 4rem;
+  width: 35.5rem;
+  border-radius: 0.5rem;
+  margin-left: 0.5rem;
+}
+.container-search .form-search .btn-search {
+  color: white;
+  background-color: #b2d235;
+  margin-left: 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  width: 10rem;
+  height: 4rem;
+}
+
+.form-filter {
+  display: flex;
+  flex-direction: row;
+  width: 110rem;
+  height: 10.9rem;
+  border-radius: 0.5rem;
+  border: 1px solid #c4c4c4;
+  margin-left: 21rem;
+}
+.form-filter .title-search {
+  padding-right: 0.5rem;
+  width: 10rem;
+}
+.form-filter .title-search p {
+  padding: 1rem 0 0 1rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.form-option {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.form-option .btn-group-option {
+  display: flex;
+  flex-direction: row;
+}
+.form-option .btn-group-option .btn-new {
+  width: 10.1rem;
+  height: 3.4rem;
+  font-size: 1.4rem;
+  color: black;
+  border: 0;
+  margin-right: 1rem;
+  margin-top: 1rem;
+}
+.form-option .btn-group-option .btn-old {
+  width: 10.1rem;
+  height: 3.4rem;
+  color: black;
+  font-size: 1.4rem;
+  border: 0;
+  margin: 1rem 1rem 0rem 0rem;
+}
+.form-option .option-search {
+  width: 18rem;
+  height: 3.4rem;
+  margin: 1rem 1rem 0rem 0rem;
+  font-size: 1.4rem;
+  border-radius: 0.2rem;
+}
+
+.btn-new:hover {
+  background-color: #b2d235;
+  color: white;
+}
+
+.btn-old:hover {
+  background-color: #b2d235;
+  color: white;
+}

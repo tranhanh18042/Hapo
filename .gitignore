@@ -15,8 +15,8 @@ yarn-error.log
 /.vscode
 /public/app/public
 .env
-/public
+/public/
 /dist
-/resources/asset
-/resources/asset/img
-/resources/sass/slick-1.8.1
+/resources/asset/
+/resources/asset/img/**
+/resources/sass**/slick-1.8.1

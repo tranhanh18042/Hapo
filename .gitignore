@@ -15,5 +15,5 @@ yarn-error.log
 /.vscode
 /public/app/public
 .env
-/public
+/public/
 /dist

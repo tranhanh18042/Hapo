@@ -16,6 +16,4 @@ yarn-error.log
 /public/app/public
 /public/img/*.png
 /dist
-/resources/asset/
 /resources/sass/**/slick-1.8.1
-/resources/asset/img/*.png

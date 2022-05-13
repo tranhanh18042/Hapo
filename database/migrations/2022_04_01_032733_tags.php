@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class Lesson extends Migration
+class Tags extends Migration
 {
     /**
      * Run the migrations.
@@ -13,15 +13,11 @@ class Lesson extends Migration
      */
     public function up()
     {
-        Schema::create('lesson', function (Blueprint $table) {
+        Schema::create('tags',function(Blueprint $table){
             $table->id();
-            $table->string('lesson')->nullable();
-            $table->integer('time')->nullable();
-            $table->longText('decripton')->nullable();
-            $table->longText('requirement')->nullable();
-            $table->string('avatar')->nullable();
+            $table->string('name','255')->nullable();
+            $table->string('link','255')->nullable();
             $table->timestamps();
-            $table->bigInteger('id_document')->nullable();
             $table->softDeletes()->nullable();
         });
     }
@@ -33,6 +29,6 @@ class Lesson extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('lesson');
+        Schema::dropIfExists('tags');
     }
 }

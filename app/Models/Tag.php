@@ -13,6 +13,6 @@ class Tag extends Model
 
     public function course()
     {
-        return $this->belongsTo(Course::class,'course_tag','id_tag','id_course');
+        return $this->belongsTo(Course::class, 'course_tag', 'id_tag', 'id_course');
     }
 }

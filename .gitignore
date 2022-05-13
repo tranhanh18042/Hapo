@@ -16,3 +16,4 @@ yarn-error.log
 /public/app/public
 /public/img/*.png
 /dist
+/public

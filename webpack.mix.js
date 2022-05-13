@@ -17,3 +17,4 @@ mix.js('resources/sass/js/feed_back.js', 'public/js')
     .sass('resources/sass/HomePage/app.scss', 'public/css')
     .copy('resources/asset/img', 'public/img')
     .version();
+    

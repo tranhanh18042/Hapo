@@ -1,0 +1,115 @@
+.container-courses-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.container-courses-group .card {
+  width: 54rem;
+  height: 34rem;
+  margin: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 0.8rem;
+}
+
+.header-card {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #f1f1f1;
+}
+.header-card .img-courses {
+  margin-left: 2rem;
+  width: 8.9rem;
+  height: 8.9rem;
+}
+.header-card .img-courses img {
+  margin-top: 2rem;
+  width: 8.9rem;
+  height: 8.9rem;
+}
+.header-card .card-body {
+  padding: 0rem 0rem 0rem 2rem;
+}
+.header-card .card-body .card-title {
+  padding: 1rem;
+  margin: 0px;
+  font-size: 2.5rem;
+  font-family: cursive;
+  font-weight: bold;
+  color: #505353;
+}
+.header-card .card-body .card-text {
+  font-size: 1.5rem;
+  padding: 0rem 2rem 1rem 2rem;
+  margin: 0px;
+}
+.header-card .card-body .btn-courses {
+  background-color: #b2d235;
+  border: 0px;
+  width: 10.6rem;
+  height: 4.2rem;
+  border-radius: 2.2rem;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 1.8rem;
+  font-family: cursive;
+}
+
+.btn-more {
+  display: flex;
+  flex-direction: flex;
+  justify-content: flex-end;
+  padding: 2rem 2rem 2rem 2rem;
+}
+
+.imformation-courses {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0rem 2rem;
+  border-top: 2px;
+  width: 54rem;
+}
+.imformation-courses .learners-courses .learners {
+  margin: 0;
+  font-size: 2.5rem;
+  font-family: cursive;
+  font-style: bold;
+  color: #505353;
+}
+.imformation-courses .learners-courses .quantity-learners {
+  margin: 0;
+  font-size: 3rem;
+  font-family: cursive;
+  font-style: bold;
+  color: #b2d235;
+}
+.imformation-courses .lessons-courses .lessons {
+  margin: 0;
+  font-size: 2.5rem;
+  font-family: cursive;
+  font-style: bold;
+  color: #505353;
+}
+.imformation-courses .lessons-courses .quantity-lessons {
+  margin: 0;
+  font-size: 3rem;
+  font-family: cursive;
+  font-style: bold;
+  color: #b2d235;
+}
+.imformation-courses .times-courses .times {
+  margin: 0;
+  font-size: 2.5rem;
+  font-family: cursive;
+  font-style: bold;
+  color: #505353;
+}
+.imformation-courses .times-courses .quantity-times {
+  margin: 0;
+  font-size: 3rem;
+  font-family: cursive;
+  font-style: bold;
+  color: #b2d235;
+}

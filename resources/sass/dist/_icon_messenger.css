@@ -1,0 +1,9 @@
+.popup-messenger {
+  position: fixed;
+  top: 660px;
+  right: 10px;
+  z-index: 2000;
+}
+.popup-messenger img {
+  border-radius: 35px;
+}

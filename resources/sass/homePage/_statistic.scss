@@ -1,0 +1,119 @@
+.container-static {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .static {
+    border-bottom: 6px solid $color-line;
+    width: 350px;
+
+    .title-static {
+      color: #11114E;
+      font-size: 80px;
+      font-family: cursive;
+      font-weight: bold;
+    }
+  }
+
+  .list-static {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .item-static {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5% 15% 0 15%;
+
+    p {
+      font-size: 60px;
+      font-family: cursive;
+    }
+
+    .amount{
+      font-size: 60px;
+      color: $color-text-title;
+    }
+  }
+}
+
+@media only screen and (min-width:768px) and (max-width: 1025px) {
+  .container-static {
+    height: 200px;
+    padding-top: 10%;
+  
+    .static {
+      width: 210px;
+  
+      .title-static {
+        font-size: 50px;
+      }
+    }
+  
+    .list-static {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  
+    .item-static {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 5% 15% 0 15%;
+
+      p {
+        font-size: 40px;
+        font-family: cursive;
+      }
+  
+      .amount{
+        font-size: 40px;
+        color: $color-text-title;
+      }
+    }
+  } 
+}
+
+@media only screen and (min-width:200px) and (max-width: 767px) {
+  .container-static {
+    height: auto;
+    padding-top: 10%;
+  
+    .static {
+      width: 165px;
+  
+      .title-static {
+        font-size: 40px;
+      }
+    }
+  
+    .list-static {
+      display: flex;
+      flex-direction: column;
+      align-items: space-between;
+    }
+  
+    .item-static {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+      padding: 10%;
+
+      p {
+        font-size: 35px;
+        font-family: cursive;
+      }
+  
+      .amount{
+        font-size: 35px;
+        color: $color-text-title;
+      }
+    }
+  }
+}

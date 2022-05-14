@@ -1,0 +1,100 @@
+@import 'variable';
+.container-become {
+  width: 100%;
+  height: 500px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #B2D235;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .text-become {
+    width: 750px;
+    height: 158px;
+    font-size: 60px;
+    font-family: cursive;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+  }
+
+  .btn-start {
+    background-color: white;
+    width: 377px;
+    height: 70px;
+    border-radius: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    box-shadow: inset 0px, 4px rgba(0, 0, 0, 0.25);
+
+
+    .link-btn {
+      color: $color-text-title;
+      font-family: cursive;
+      font-size: 30px;
+      text-decoration: none;
+    }
+
+    .link-btn:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+@media only screen and (min-width:768px) and (max-width: 1025px) {
+  .container-become {
+    height: 266px;
+
+    .text-become {
+      width: 450px;
+      height: 87px;
+      font-size: 35px;
+      font-family: cursive;
+      text-align: center;
+      color: white;
+      font-weight: bold;
+    }
+
+    .btn-start {
+      width: 250px;
+      height: 46px;
+      border-radius: 20px;
+
+      .link-btn {
+        color: $color-text-title;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width:200px) and (max-width: 767px) {
+  .container-become {
+    height: 181px;
+
+    .text-become {
+      width: 291px;
+      height: 70px;
+      font-size: 23px;
+      font-family: cursive;
+      text-align: center;
+      color: white;
+      font-weight: bold;
+    }
+
+    .btn-start {
+      width: 200px;
+      height: 37px;
+      border-radius: 20px;
+
+      .link-btn {
+        font-size: 18px;
+      }
+    }
+  }
+}

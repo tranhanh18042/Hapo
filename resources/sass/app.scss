@@ -1,8 +1,23 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url("https://fonts.googleapis.com/css?family=Nunito");
 
 // Variables
-@import 'variables';
+@import "variables";
 
 // Bootstrap
-@import '~bootstrap/scss/bootstrap';
+@import "~bootstrap/scss/bootstrap";
+@import "node_modules/font-awesome/scss/font-awesome";
+@import 'variable';
+@import 'header';
+@import 'banner';
+@import 'list_courses';
+@import 'other_courses';
+@import 'why_hapo';
+@import 'feedback';
+@import 'become';       
+@import 'statistic';
+@import 'footer';
+@import 'author';
+@import 'form_login';
+@import 'form_register';
+@import 'icon_messenger';

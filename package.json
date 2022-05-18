@@ -27,6 +27,7 @@
     },
     "dependencies": {
         "autoprefixer": "10.4.5",
+        "font-awesome": "^4.7.0",
         "slick-carousel": "^1.8.1"
     }
 }

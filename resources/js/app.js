@@ -3,7 +3,7 @@
  * includes Vue and other libraries. It is a great starting point when
  * building robust, powerful web applications using Vue and Laravel.
  */
-
+ window.$ = window.jQuery = require('jquery')
 require('./bootstrap');
 require('./login_register');
 window.Vue = require('vue').default;

@@ -5,8 +5,7 @@
  */
 
 require('./bootstrap');
-import('./login_register')
-
+require('./login_register');
 window.Vue = require('vue').default;
 
 /**

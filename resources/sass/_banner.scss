@@ -4,7 +4,7 @@
   height: 650px;
   display: flex !important;
   align-items: center;
-  background-image: url('https://s3-alpha-sig.figma.com/img/866b/63ac/1e9eca12ac0612fb7b885045132e08f8?Expires=1652659200&Signature=fMiRO90lvj1jV6gepJIepc~dNllcnGnPZ49LoDA0AG4L4rRIEPXYzlmmNr3MnlcYrwZeD9HnShTgEl2TwSqyroXHVzVkHrHMOQqI6Oc0iIRr6QwAAhTDbETGzwczSU7yzxQnQkFS8LUU1iby-tdE4pQHzhguOb6p00oEY~6imKsF4bPwO7BifJvbRLajFhe95BJgc1D9dl-oqnQzReE9YdlHnokcKenblOesFb5d2VYzoDbpdv8LxQSgB5JqKUN7xya4fQNWlDFeLV-sB9NolHnCepnlzWm0HgU337FLLboDs5a6mQ1yCp6qHyAYp1nmszd7mYlL9IkFg6PbHcvHwA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA');
+  background-image: url("/img/banner.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -52,7 +52,7 @@
 @media only screen and (min-width:768px) and (max-width: 1025px) {
   .banner {
     height: 350px;
-    background-image: url('http://127.0.0.1:5501/scaford-with-frontend/public/app/scss/img/banner_tablet.png');
+    background-image: url("/img/banner_tablet.png");
   }
 
   .banner-content {
@@ -87,7 +87,7 @@
   .banner {
     justify-content: center;
     height: 200px;
-    background-image: url('http://127.0.0.1:5501/scaford-with-frontend/public/app/scss/img/banner_tablet.png');
+    background-image: url("/img/banner_phone.png");
   }
       
   .banner-content {

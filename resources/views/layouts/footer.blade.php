@@ -1,6 +1,6 @@
 <div class="container-footer">
     <div class="logo-and-text">
-        <img src="/app/img/logo_hapo_footer.png" alt="logo_footer">
+        <img src="/img/logo_hapo_footer.png" alt="logo_footer">
         <p>Interactive lessons, "on-the-go" practice, peer support.</p>
     </div>
     <div class="group-option">
@@ -17,9 +17,9 @@
         </div>
     </div>
     <div class="group-icon">
-        <a title="facebook.com/tuyen.dung.haposoft" href="#"><img src="/app/img/logo_facebook.png" alt="logo_facebook"></a>
-        <a title="+84-85-645-9898" href="#"><img src="/app/img/logo_phone.png" alt="logo_phone"></a>
-        <a title="info@haposoft.com" href="#"><img src="/app/img/logo_mail.png" alt="logo_mail"></a>
+        <a title="facebook.com/tuyen.dung.haposoft" href="#"><img src="/img/logo_facebook.png" alt="logo_facebook"></a>
+        <a title="+84-85-645-9898" href="#"><img src="/img/logo_phone.png" alt="logo_phone"></a>
+        <a title="info@haposoft.com" href="#"><img src="/img/logo_mail.png" alt="logo_mail"></a>
     </div>
 </div>
 <div class="box-author">

@@ -1,4 +1,5 @@
-<div class="modal fade modal-login-register" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade modal-login-register" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
     <div class="modal-dialog">
         <!-- login -->
         <div class="modal-content content-login">
@@ -9,7 +10,8 @@
             <div class="modal-body body-login">
                 <div class="mb-3 username">
                     <label for="exampleInputEmail1" class="form-label title-username">Username:</label>
-                    <input type="email" class="form-control text-username" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <input type="email" class="form-control text-username" id="exampleInputEmail1"
+                        aria-describedby="emailHelp">
                 </div>
                 <div class="mb-3 password">
                     <label for="exampleInputPassword1" class="form-label title-password">Password:</label>
@@ -48,7 +50,8 @@
             <div class="modal-body body-register">
                 <div class="mb-3 username">
                     <label for="exampleInputEmail1" class="form-label title-username">Username:</label>
-                    <input type="email" class="form-control text-username" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <input type="email" class="form-control text-username" id="exampleInputEmail1"
+                        aria-describedby="emailHelp">
                 </div>
                 <div class="mb-3 email">
                     <label for="exampleInputPassword1" class="form-label title-email">Email:</label>

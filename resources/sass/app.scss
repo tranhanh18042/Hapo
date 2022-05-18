@@ -1,3 +1,11 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";
 @import 'variable';
 @import 'header';
 @import 'banner';
@@ -12,4 +20,3 @@
 @import 'form_login';
 @import 'form_register';
 @import 'icon_messenger';
-@import 'all_courses';
